@@ -1,0 +1,51 @@
+hibernate:
+    cache:
+        use_query_cache: true
+        use_second_level_cache: false
+    dialect: org.hibernate.dialect.PostgreSQL9Dialect
+logging:
+    level:
+        org:
+            hibernate:
+                SQL: DEBUG
+                engine:
+                    jdbc:
+                        env:
+                            internal:
+                                LobCreatorBuilderImpl: ERROR
+                stat: TRACE
+                type:
+                    descriptor:
+                        sql:
+                            BasicBinder: TRACE
+spring:
+    application:
+        name: course-service
+    autoconfigure:
+        exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+    cloud:
+        config:
+            name: config-server
+            server:
+                git:
+                    uri: S:\Git\jcoursescloud\config-repo
+    datasource:
+        url: jdbc:postgresql://localhost:5432/jcourses
+        driver-class-name: org.postgresql.Driver
+        password: postgres
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: validate
+        properties:
+            hibernate:
+                format_sql: true
+                generate_statistics: true
+        show-sql: true
+    profiles:
+        active: dev
+    config:
+        name: ${spring.application.name}-${spring.profiles.active}.yml
+
+server:
+    port: 8182

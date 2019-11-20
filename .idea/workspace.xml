@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a254ca3d-d6ed-4758-b9f0-80aae046b7fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AdminWebappApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/CourseSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/helper/ModelHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/domain/CourseSessionModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/CourseSessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/LocationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/http/HttpRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/ClientRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/CourseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/CourseSessionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/LocationRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/CourseSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/LocationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/ClientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/CourseSessionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/LocationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/validator/UserValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.standalone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.standalone.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.standalone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker-en-CA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ar-tn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.az.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bg.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.br.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ca.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.cs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.cy.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.da.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.de.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.el.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-AU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-CA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-GB.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-IE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-NZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-ZA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.eo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.es.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.et.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.eu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fa.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fr-CH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.gl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.he.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hy.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.id.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.is.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.it-CH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.it.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ja.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ka.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.kh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.kk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.km.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ko.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.kr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.lt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.lv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.me.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.mk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.mn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ms.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.nl-BE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.nl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.no.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.oc.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.pl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.pt-BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.pt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ro.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.rs-latin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.rs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ru.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.si.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sq.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sr-latin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sw.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ta.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.tg.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.th.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.tk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.tr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.uk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.uz-cyrl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.uz-latn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.vi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.zh-TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/resources/validation.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/messages/messages_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/access-denied.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/client-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/client-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/course-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/course-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/course-session-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/course-session-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/location-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/location-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/registration.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/src/test/java/com/utbm/lo54/adminwebapp/ClientWebappApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.standalone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.standalone.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.standalone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.standalone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.standalone.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.standalone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker-en-CA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ar-tn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.az.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.bg.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.bm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.bn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.br.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.bs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ca.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.cs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.cy.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.da.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.de.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.el.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-AU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-CA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-GB.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-IE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-NZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-ZA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.eo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.es.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.et.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.eu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.fa.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.fi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.fo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.fr-CH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.fr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.gl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.he.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.hi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.hr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.hu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.hy.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.id.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.is.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.it-CH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.it.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ja.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ka.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.kh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.kk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.km.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ko.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.kr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.lt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.lv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.me.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.mk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.mn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ms.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.nl-BE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.nl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.no.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.oc.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.pl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.pt-BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.pt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ro.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.rs-latin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.rs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ru.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.si.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sq.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sr-latin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sw.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ta.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.tg.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.th.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.tk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.tr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.uk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.uz-cyrl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.uz-latn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.vi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.zh-TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/ClientServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/repository/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/service/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/service/impl/ClientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-service/src/test/java/com/utbm/lo54/clientservice/ClientServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/ClientWebappApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/CourseSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/helper/ModelHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/domain/CourseSessionModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/CourseSessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/LocationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/http/HttpRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/ClientRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/CourseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/CourseSessionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/LocationRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/CourseSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/LocationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/ClientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/CourseSessionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/LocationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/validator/UserValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.standalone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.standalone.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.standalone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker-en-CA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ar-tn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.az.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.bg.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.bm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.bn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.br.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.bs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ca.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.cs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.cy.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.da.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.de.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.el.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-AU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-CA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-GB.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-IE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-NZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-ZA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.eo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.es.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.et.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.eu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.fa.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.fi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.fo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.fr-CH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.fr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.gl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.he.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.hi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.hr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.hu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.hy.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.id.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.is.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.it-CH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.it.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ja.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ka.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.kh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.kk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.km.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ko.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.kr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.lt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.lv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.me.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.mk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.mn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ms.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.nl-BE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.nl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.no.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.oc.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.pl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.pt-BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.pt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ro.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.rs-latin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.rs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ru.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.si.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sq.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sr-latin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sw.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ta.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.tg.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.th.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.tk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.tr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.uk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.uz-cyrl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.uz-latn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.vi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.zh-TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/validation.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/messages/messages_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/access-denied.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/client-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/client-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-session-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-session-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/location-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/location-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/registration.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-webapp/src/test/java/com/utbm/lo54/adminwebapp/ClientWebappApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloudcourses.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/java/com/utbm/lo54/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/test/java/com/utbm/lo54/configserver/ConfigServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/CoreApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/InitialDataLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/courses/PersistenceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/courses/domain/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/courses/domain/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/courses/domain/CourseSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/courses/domain/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/courses/utils/ServiceApiEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/UsersPersistenceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/domain/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/handler/CustomSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/service/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/service/impl/SecurityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/users/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/com/utbm/lo54/core/CoreApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/CourseServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-service/src/test/java/com/utbm/lo54/courseservice/CourseServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/CourseSessionServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/controller/CourseSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/controller/helper/ModelHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/repository/CourseSessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/service/CourseSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/service/impl/CourseSessionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-session-service/src/test/java/com/utbm/lo54/coursesessionservice/CourseSessionServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/java/com/utbm/lo54/eureka/EurekaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka/src/test/java/com/utbm/lo54/eureka/EurekaApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/LocationServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/repository/LocationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/service/LocationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/service/impl/LocationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/location-service/src/test/java/com/utbm/lo54/locationservice/LocationServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TqvtkKuTXqSK2YJdRCsm1HDWiW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/location-service/src/main/resources" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="S:\Git\cloudcourses\location-service\src\main\resources" />
+      <recent name="S:\Git\cloudcourses\course-session-service\src\main\resources" />
+      <recent name="S:\Git\cloudcourses\course-service\src\main\resources" />
+      <recent name="S:\Git\cloudcourses\admin-webapp\src\main\resources" />
+      <recent name="S:\Git\cloudcourses\client-webapp\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CourseSessionServiceApplication">
+    <configuration name="ClientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="client-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.clientservice.ClientServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientWebappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="client-webapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.utbm.lo54.adminwebapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.clientwbapp.ClientWebappApplication" />
+      <option name="DEBUG_MODE" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="course-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.courseservice.CourseServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseSessionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="course-session-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.coursesessionservice.CourseSessionServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="location-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.locationservice.LocationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ClientServiceApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.CourseServiceApplication" />
+      <item itemvalue="Spring Boot.CourseSessionServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.LocationServiceApplication" />
+      <item itemvalue="Spring Boot.ClientWebappApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ClientWebappApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.19534633" />
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@51d44e43" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@51d44e43" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6b9d6e02" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@51d44e43" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@de6ef353" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a254ca3d-d6ed-4758-b9f0-80aae046b7fb" name="Default Changelist" comment="" />
+      <created>1574200656352</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574200656352</updated>
+      <workItem from="1574200659342" duration="21016000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

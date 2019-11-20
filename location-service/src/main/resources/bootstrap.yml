@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: location-service
+    cloud:
+        config:
+            server:
+                git:
+                    uri: S:\Git\jcoursescloud\config-repo
+    profiles:
+        active: dev

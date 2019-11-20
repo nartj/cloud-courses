@@ -1,0 +1,11 @@
+Diff:
+    userForm:
+        passwordConfirm: These passwords don't match.
+Duplicate:
+    userForm:
+        username: Someone already has that username.
+NotEmpty: This field is required.
+Size:
+    userForm:
+        password: Try one with at least 8 characters.
+        username: Please use between 6 and 32 characters.
