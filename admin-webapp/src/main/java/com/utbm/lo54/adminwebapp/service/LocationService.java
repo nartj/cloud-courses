@@ -1,7 +1,7 @@
 package com.utbm.lo54.adminwebapp.service;
 
 
-import com.utbm.lo54.core.courses.domain.Location;
+import com.utbm.lo54.core.domain.Location;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
 import org.springframework.security.access.annotation.Secured;
 

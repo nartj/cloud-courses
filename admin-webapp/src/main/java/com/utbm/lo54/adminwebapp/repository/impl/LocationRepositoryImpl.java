@@ -1,7 +1,7 @@
 package com.utbm.lo54.adminwebapp.repository.impl;
 
 import com.utbm.lo54.adminwebapp.repository.LocationRepository;
-import com.utbm.lo54.core.courses.domain.Location;
+import com.utbm.lo54.core.domain.Location;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

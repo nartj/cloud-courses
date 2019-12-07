@@ -3,7 +3,7 @@ package com.utbm.lo54.clientwebapp.controller;
 import com.utbm.lo54.clientwebapp.controller.helper.ModelHelper;
 import com.utbm.lo54.clientwebapp.domain.CourseSessionModel;
 import com.utbm.lo54.clientwebapp.service.CourseSessionService;
-import com.utbm.lo54.core.courses.domain.CourseSession;
+import com.utbm.lo54.core.domain.CourseSession;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

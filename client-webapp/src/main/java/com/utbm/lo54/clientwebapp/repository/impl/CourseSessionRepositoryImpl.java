@@ -1,10 +1,10 @@
 package com.utbm.lo54.clientwebapp.repository.impl;
 
 import com.utbm.lo54.clientwebapp.repository.CourseSessionRepository;
-import com.utbm.lo54.core.courses.domain.CourseSession;
-import com.utbm.lo54.core.courses.domain.CourseSession;
-import com.utbm.lo54.core.courses.utils.ServiceApiEndpoint;
-import com.utbm.lo54.core.users.service.impl.SecurityServiceImpl;
+import com.utbm.lo54.core.domain.CourseSession;
+import com.utbm.lo54.core.domain.CourseSession;
+import com.utbm.lo54.core.ServiceApiEndpoint;
+import com.utbm.lo54.security.service.impl.SecurityServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

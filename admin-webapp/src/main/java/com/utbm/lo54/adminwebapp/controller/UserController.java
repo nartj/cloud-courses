@@ -1,9 +1,9 @@
 package com.utbm.lo54.adminwebapp.controller;
 
 import com.utbm.lo54.adminwebapp.validator.UserValidator;
-import com.utbm.lo54.core.users.domain.User;
-import com.utbm.lo54.core.users.service.SecurityService;
-import com.utbm.lo54.core.users.service.UserService;
+import com.utbm.lo54.security.domain.User;
+import com.utbm.lo54.security.service.SecurityService;
+import com.utbm.lo54.security.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

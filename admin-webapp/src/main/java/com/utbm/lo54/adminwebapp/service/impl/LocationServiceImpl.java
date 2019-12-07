@@ -2,7 +2,7 @@ package com.utbm.lo54.adminwebapp.service.impl;
 
 import com.utbm.lo54.adminwebapp.repository.LocationRepository;
 import com.utbm.lo54.adminwebapp.service.LocationService;
-import com.utbm.lo54.core.courses.domain.Location;
+import com.utbm.lo54.core.domain.Location;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

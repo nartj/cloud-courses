@@ -1,7 +1,7 @@
 package com.utbm.lo54.coursesessionservice.service;
 
 
-import com.utbm.lo54.core.courses.domain.CourseSession;
+import com.utbm.lo54.core.domain.CourseSession;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
 
 import java.util.List;

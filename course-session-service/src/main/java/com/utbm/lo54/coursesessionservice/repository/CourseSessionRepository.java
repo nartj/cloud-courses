@@ -1,6 +1,6 @@
 package com.utbm.lo54.coursesessionservice.repository;
 
-import com.utbm.lo54.core.courses.domain.CourseSession;
+import com.utbm.lo54.core.domain.CourseSession;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
 package com.utbm.lo54.clientservice.service;
 
-import com.utbm.lo54.core.courses.domain.Client;
+import com.utbm.lo54.core.domain.Client;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
 
 import java.util.List;

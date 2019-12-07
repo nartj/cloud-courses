@@ -1,8 +1,8 @@
 package com.utbm.lo54.adminwebapp;
 
-import com.utbm.lo54.core.users.domain.Role;
-import com.utbm.lo54.core.users.repository.RoleRepository;
-import com.utbm.lo54.core.users.repository.UserRepository;
+import com.utbm.lo54.security.domain.Role;
+import com.utbm.lo54.security.repository.RoleRepository;
+import com.utbm.lo54.security.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

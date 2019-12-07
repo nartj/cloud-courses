@@ -1,7 +1,7 @@
 package com.utbm.lo54.clientwebapp.service;
 
 
-import com.utbm.lo54.core.courses.domain.Course;
+import com.utbm.lo54.core.domain.Course;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
 import org.springframework.security.access.annotation.Secured;
 

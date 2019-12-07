@@ -1,7 +1,7 @@
 package com.utbm.lo54.clientwebapp.controller;
 
 import com.utbm.lo54.clientwebapp.service.CourseService;
-import com.utbm.lo54.core.courses.domain.Course;
+import com.utbm.lo54.core.domain.Course;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -2,7 +2,7 @@ package com.utbm.lo54.adminwebapp.service.impl;
 
 import com.utbm.lo54.adminwebapp.repository.CourseSessionRepository;
 import com.utbm.lo54.adminwebapp.service.CourseSessionService;
-import com.utbm.lo54.core.courses.domain.CourseSession;
+import com.utbm.lo54.core.domain.CourseSession;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,6 +1,6 @@
 package com.utbm.lo54.coursesessionservice.service.impl;
 
-import com.utbm.lo54.core.courses.domain.CourseSession;
+import com.utbm.lo54.core.domain.CourseSession;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
 import com.utbm.lo54.coursesessionservice.repository.CourseSessionRepository;
 import com.utbm.lo54.coursesessionservice.service.CourseSessionService;

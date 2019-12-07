@@ -1,8 +1,8 @@
 package com.utbm.lo54.adminwebapp.domain;
 
-import com.utbm.lo54.core.courses.domain.Course;
-import com.utbm.lo54.core.courses.domain.CourseSession;
-import com.utbm.lo54.core.courses.domain.Location;
+import com.utbm.lo54.core.domain.Course;
+import com.utbm.lo54.core.domain.CourseSession;
+import com.utbm.lo54.core.domain.Location;
 
 import java.io.Serializable;
 import java.util.List;

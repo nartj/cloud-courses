@@ -2,11 +2,8 @@ package com.utbm.lo54.clientservice.service.impl;
 
 import com.utbm.lo54.clientservice.repository.ClientRepository;
 import com.utbm.lo54.clientservice.service.ClientService;
-import com.utbm.lo54.core.courses.domain.Client;
-import com.utbm.lo54.core.users.domain.User;
+import com.utbm.lo54.core.domain.Client;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
-import com.utbm.lo54.core.users.repository.UserRepository;
-import com.utbm.lo54.core.users.service.impl.SecurityServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

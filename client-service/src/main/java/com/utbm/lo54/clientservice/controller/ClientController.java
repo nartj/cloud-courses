@@ -1,7 +1,7 @@
 package com.utbm.lo54.clientservice.controller;
 
 import com.utbm.lo54.clientservice.service.ClientService;
-import com.utbm.lo54.core.courses.domain.Client;
+import com.utbm.lo54.core.domain.Client;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,5 +56,10 @@ public class ClientController {
     public ResponseEntity<Long> deleteClient(@PathVariable Long id) {
         clientService.deleteClient(id);
         return ResponseEntity.ok(id);
+    }
+
+    @GetMapping("/get/{cookie}")
+    public void getCookie(@PathVariable String cookie) {
+        System.out.println(cookie);
     }
 }

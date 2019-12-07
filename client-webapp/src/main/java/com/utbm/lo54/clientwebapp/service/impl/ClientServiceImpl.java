@@ -2,11 +2,11 @@ package com.utbm.lo54.clientwebapp.service.impl;
 
 import com.utbm.lo54.clientwebapp.repository.ClientRepository;
 import com.utbm.lo54.clientwebapp.service.ClientService;
-import com.utbm.lo54.core.courses.domain.Client;
-import com.utbm.lo54.core.users.domain.User;
+import com.utbm.lo54.core.domain.Client;
+import com.utbm.lo54.security.domain.User;
 import com.utbm.lo54.core.exception.ResourceNotFoundException;
-import com.utbm.lo54.core.users.repository.UserRepository;
-import com.utbm.lo54.core.users.service.impl.SecurityServiceImpl;
+import com.utbm.lo54.security.repository.UserRepository;
+import com.utbm.lo54.security.service.impl.SecurityServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

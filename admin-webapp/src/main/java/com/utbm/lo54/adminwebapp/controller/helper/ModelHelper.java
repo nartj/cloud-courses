@@ -3,9 +3,9 @@ package com.utbm.lo54.adminwebapp.controller.helper;
 import com.utbm.lo54.adminwebapp.domain.CourseSessionModel;
 import com.utbm.lo54.adminwebapp.service.CourseService;
 import com.utbm.lo54.adminwebapp.service.LocationService;
-import com.utbm.lo54.core.courses.domain.Course;
-import com.utbm.lo54.core.courses.domain.CourseSession;
-import com.utbm.lo54.core.courses.domain.Location;
+import com.utbm.lo54.core.domain.Course;
+import com.utbm.lo54.core.domain.CourseSession;
+import com.utbm.lo54.core.domain.Location;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
