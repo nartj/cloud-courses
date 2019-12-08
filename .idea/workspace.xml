@@ -2,256 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a254ca3d-d6ed-4758-b9f0-80aae046b7fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client-webapp/META-INF/application.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/SecurityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/HttpRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/SecurityRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/SecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/SecurityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-courses.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/PersistenceConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/ServiceApiEndpoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/configuration/JwtConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/GenericWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/courses/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/courses/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/courses/CourseSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/courses/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/security/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/security/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/JwtUsernameAndPasswordAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/SecurityApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/controller/SecurityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security/src/test/java/com/utbm/lo54/common/CoreApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/ServiceLayerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/controller/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/controller/CourseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/controller/CourseSessionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/controller/LocationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/controller/helper/ModelHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/repository/ClientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/repository/CourseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/repository/CourseSessionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/repository/LocationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/ClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/CourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/CourseSessionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/LocationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/impl/ClientServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/impl/CourseSessionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/impl/LocationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-layer/src/test/java/com/utbm/lo54/servicelayer/ServicelayerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/JwtUsernameAndPasswordAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/ZuulApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/controller/JwtAuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/controller/SecurityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/JwtRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/JwtToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/UserAppDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/repository/JwtTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/repository/SecurityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtTokenFilterConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtTokenProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtTokenUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/SecurityTokenConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/exception/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/JwtUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/SecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/impl/SecurityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zuul/src/test/java/com/utbm/lo54/zuul/ZuulApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/WebMvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/CourseSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/CourseSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/LocationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/helper/ModelHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/helper/ModelHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/domain/CourseSessionModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/domain/CourseSessionModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/CourseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/CourseSessionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/CourseSessionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/LocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/LocationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/ClientRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/ClientRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/CourseRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/CourseRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/CourseSessionRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/CourseSessionRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/LocationRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/LocationRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/CourseSessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/CourseSessionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/LocationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/ClientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/CourseSessionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/CourseSessionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/LocationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/client-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/client-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/client-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/client-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/WebMvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/repository/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/service/impl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/service/impl/ClientServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client-webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/ClientWebappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/ClientWebappApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/WebMvcConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/CourseSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/CourseSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/LocationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/helper/ModelHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/helper/ModelHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/domain/CourseSessionModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/domain/CourseSessionModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/CourseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/CourseSessionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/CourseSessionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/LocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/LocationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/http/HttpRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/HttpRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/ClientRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/ClientRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/CourseRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/CourseRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/CourseSessionRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/CourseSessionRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/LocationRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/LocationRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/CourseSessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/CourseSessionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/LocationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/ClientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/CourseSessionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/CourseSessionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/LocationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/validator/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/validator/UserValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/messages/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/messages/messages_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/access-denied.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/access-denied.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/client-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/client-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/client-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/client-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-session-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-session-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-session-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-session-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/location-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/location-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/location-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/location-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/registration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/messages/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/messages/messages_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/access-denied.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/access-denied.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/client-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/client-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/client-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/client-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-session-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-session-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-session-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-session-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/location-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/location-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/location-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/location-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/PersistenceConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/ServiceApiEndpoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/domain/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/domain/Course.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/domain/CourseSession.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/domain/Location.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/utbm/lo54/core/exception/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/java/com/utbm/lo54/core/CoreApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/AppConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/AppInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/WebMvcConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/repository/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/repository/CourseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/WebMvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/controller/CourseSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/controller/CourseSessionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/repository/CourseSessionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/repository/CourseSessionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/service/CourseSessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/service/CourseSessionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/service/impl/CourseSessionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/service/impl/CourseSessionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/WebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/WebMvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/controller/LocationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/repository/LocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/repository/LocationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/service/LocationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/service/impl/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/service/impl/LocationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/UsersPersistenceConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/domain/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/exception/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/exception/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/test/java/com/utbm/lo54/core/CoreApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/test/java/com/utbm/lo54/common/CoreApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-layer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -465,6 +239,11 @@
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6b20800" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@34d2b54b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6b20800" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7bff2df2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
           </expand>
           <select />
         </treeState>
@@ -493,7 +272,7 @@
       <workItem from="1575812200350" duration="14858000" />
       <workItem from="1575827358661" duration="1142000" />
       <workItem from="1575828704223" duration="1602000" />
-      <workItem from="1575830331171" duration="308000" />
+      <workItem from="1575830331171" duration="1588000" />
     </task>
     <servers />
   </component>

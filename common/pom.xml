@@ -5,8 +5,7 @@
 	<parent>
 		<groupId>com.utbm.lo54</groupId>
 		<artifactId>cloud-courses</artifactId>
-		<version>1.0-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>common</artifactId>
 	<name>common</name>

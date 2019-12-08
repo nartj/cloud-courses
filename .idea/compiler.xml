@@ -9,7 +9,6 @@
         <module name="zuul" />
         <module name="client-webapp" />
         <module name="common" />
-        <module name="security" />
         <module name="service-layer" />
         <module name="eureka" />
         <module name="config-server" />
@@ -21,6 +20,7 @@
       <module name="course-service" target="1.8" />
       <module name="course-session-service" target="1.8" />
       <module name="location-service" target="1.8" />
+      <module name="security" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
