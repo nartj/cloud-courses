@@ -19,22 +19,28 @@ logging:
             sql:
               BasicBinder: TRACE
 spring:
+  application:
+    name: security
+  main:
+    allow-bean-definition-overriding: true
+
   datasource:
     driver-class-name: org.postgresql.Driver
     password: postgres
-    url: jdbc:postgresql://localhost:5432/jcourses
+    url: jdbc:postgresql://localhost:5432/users
     username: postgres
-    users:
-      url: jdbc:postgresql://localhost:5432/users
   jpa:
     hibernate:
-      ddl-auto: validate
+      ddl-auto: create
     properties:
       hibernate:
         format_sql: true
         generate_statistics: true
     show-sql: true
-  mvc:
-    view:
-      prefix: /WEB-INF/views/
-      suffix: .jsp
+server:
+  port: 9100
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka

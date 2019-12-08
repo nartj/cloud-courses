@@ -2,8 +2,8 @@ package com.utbm.lo54.adminwebapp.service.impl;
 
 import com.utbm.lo54.adminwebapp.repository.CourseSessionRepository;
 import com.utbm.lo54.adminwebapp.service.CourseSessionService;
-import com.utbm.lo54.core.domain.CourseSession;
-import com.utbm.lo54.core.exception.ResourceNotFoundException;
+import com.utbm.lo54.common.domain.courses.CourseSession;
+import com.utbm.lo54.common.exception.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

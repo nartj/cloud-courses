@@ -1,8 +1,8 @@
 package com.utbm.lo54.adminwebapp.repository.impl;
 
 import com.utbm.lo54.adminwebapp.repository.ClientRepository;
-import com.utbm.lo54.core.domain.Client;
-import com.utbm.lo54.core.ServiceApiEndpoint;
+import com.utbm.lo54.common.domain.courses.Client;
+import com.utbm.lo54.common.ServiceApiEndpoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

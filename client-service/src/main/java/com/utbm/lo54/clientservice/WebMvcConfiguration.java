@@ -6,7 +6,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @ComponentScan(basePackages = {
-        "com.utbm.lo54.core.courses",
+        "com.utbm.lo54.common.courses",
         "com.utbm.lo54.clientservice.repository",
         "com.utbm.lo54.clientservice.service",
         "com.utbm.lo54.clientservice.controller"

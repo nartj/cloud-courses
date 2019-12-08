@@ -2,8 +2,8 @@ package com.utbm.lo54.adminwebapp.service.impl;
 
 import com.utbm.lo54.adminwebapp.repository.ClientRepository;
 import com.utbm.lo54.adminwebapp.service.ClientService;
-import com.utbm.lo54.core.domain.Client;
-import com.utbm.lo54.core.exception.ResourceNotFoundException;
+import com.utbm.lo54.common.domain.courses.Client;
+import com.utbm.lo54.common.exception.ResourceNotFoundException;
 import com.utbm.lo54.security.domain.User;
 import com.utbm.lo54.security.repository.UserRepository;
 import com.utbm.lo54.security.service.impl.SecurityServiceImpl;

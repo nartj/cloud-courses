@@ -1,11 +1,8 @@
 package com.utbm.lo54.locationservice.controller;
 
-import com.utbm.lo54.core.domain.Course;
-import com.utbm.lo54.core.domain.CourseSession;
-import com.utbm.lo54.core.domain.Location;
+import com.utbm.lo54.common.domain.courses.Location;
 import com.utbm.lo54.locationservice.service.LocationService;
-import com.utbm.lo54.core.domain.Client;
-import com.utbm.lo54.core.exception.ResourceNotFoundException;
+import com.utbm.lo54.common.exception.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/api")

@@ -1,6 +1,6 @@
 package com.utbm.lo54.clientservice.repository;
 
-import com.utbm.lo54.core.domain.Client;
+import com.utbm.lo54.common.domain.courses.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

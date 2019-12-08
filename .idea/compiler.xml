@@ -6,32 +6,37 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="client-service" />
+        <module name="zuul" />
         <module name="client-webapp" />
-        <module name="location-service" />
-        <module name="admin-webapp" />
+        <module name="common" />
         <module name="security" />
+        <module name="service-layer" />
         <module name="eureka" />
-        <module name="core" />
-        <module name="course-service" />
         <module name="config-server" />
-        <module name="course-session-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="admin-webapp" target="8" />
+      <module name="client-service" target="1.8" />
+      <module name="course-service" target="1.8" />
+      <module name="course-session-service" target="1.8" />
+      <module name="location-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin-webapp" options="-parameters" />
       <module name="client-service" options="-parameters" />
       <module name="client-webapp" options="-parameters" />
+      <module name="common" options="-parameters" />
       <module name="config-server" options="-parameters" />
-      <module name="core" options="-parameters" />
       <module name="course-service" options="-parameters" />
       <module name="course-session-service" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="location-service" options="-parameters" />
       <module name="security" options="-parameters" />
+      <module name="service-layer" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>

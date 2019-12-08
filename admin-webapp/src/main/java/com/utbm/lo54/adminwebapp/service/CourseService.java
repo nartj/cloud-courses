@@ -1,8 +1,8 @@
 package com.utbm.lo54.adminwebapp.service;
 
 
-import com.utbm.lo54.core.domain.Course;
-import com.utbm.lo54.core.exception.ResourceNotFoundException;
+import com.utbm.lo54.common.domain.courses.Course;
+import com.utbm.lo54.common.exception.ResourceNotFoundException;
 import org.springframework.security.access.annotation.Secured;
 
 import java.util.List;

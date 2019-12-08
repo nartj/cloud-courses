@@ -1,13 +1,10 @@
 package com.utbm.lo54.clientwebapp.repository.impl;
 
 import com.utbm.lo54.clientwebapp.repository.CourseSessionRepository;
-import com.utbm.lo54.core.domain.CourseSession;
-import com.utbm.lo54.core.domain.CourseSession;
-import com.utbm.lo54.core.ServiceApiEndpoint;
-import com.utbm.lo54.security.service.impl.SecurityServiceImpl;
+import com.utbm.lo54.common.domain.courses.CourseSession;
+import com.utbm.lo54.common.ServiceApiEndpoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
@@ -21,20 +18,15 @@ import java.util.Optional;
 public class CourseSessionRepositoryImpl implements CourseSessionRepository {
     private static final Logger LOG = LoggerFactory.getLogger(CourseSessionRepositoryImpl.class);
 
-    @Value("${services.course-session.url}")
-    private String courseSessionServiceUrl;
-
-    @Override
-    public String getServiceUrl() {
-        return courseSessionServiceUrl;
-    }
+    @Value("${application.gateway.url}")
+    private String baseUrl;
 
     @Override
     public List<CourseSession> findAll() {
         RestTemplate restTemplate = new RestTemplate();
-        LOG.info("Sending request to {}", getServiceUrl() + ServiceApiEndpoint.LIST.getEndpoint());
+        LOG.info("Sending request to {}", baseUrl + "/api/course-session" + ServiceApiEndpoint.LIST.getEndpoint());
         ResponseEntity<List<CourseSession>> responseEntity =
-                restTemplate.exchange(getServiceUrl() + ServiceApiEndpoint.LIST.getEndpoint(),
+                restTemplate.exchange(baseUrl + "/api/course-session" + ServiceApiEndpoint.LIST.getEndpoint(),
                         HttpMethod.GET, null, new ParameterizedTypeReference<List<CourseSession>>() {});
         return responseEntity.getBody();
     }
@@ -43,7 +35,7 @@ public class CourseSessionRepositoryImpl implements CourseSessionRepository {
     public Optional<CourseSession> findById(Long id) {
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<CourseSession> responseEntity =
-                restTemplate.exchange(getServiceUrl() + ServiceApiEndpoint.FIND.getEndpoint() + id,
+                restTemplate.exchange(baseUrl + "/api/course-session" + ServiceApiEndpoint.FIND.getEndpoint() + id,
                         HttpMethod.GET, null, CourseSession.class);
         return Optional.ofNullable(responseEntity.getBody());
     }
@@ -56,7 +48,7 @@ public class CourseSessionRepositoryImpl implements CourseSessionRepository {
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<CourseSession> request =
                 new HttpEntity<>(entity, headers);
-        ResponseEntity<CourseSession> client = restTemplate.exchange(getServiceUrl() + ServiceApiEndpoint.SAVE.getEndpoint(),
+        ResponseEntity<CourseSession> client = restTemplate.exchange(baseUrl + "/api/course-session" + ServiceApiEndpoint.SAVE.getEndpoint(),
                 HttpMethod.POST, request, CourseSession.class);
         return client.getBody();
     }
@@ -69,7 +61,7 @@ public class CourseSessionRepositoryImpl implements CourseSessionRepository {
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<CourseSession> request =
                 new HttpEntity<>(entity, headers);
-        ResponseEntity<CourseSession> client = restTemplate.exchange(getServiceUrl() + ServiceApiEndpoint.UPDATE.getEndpoint() + entity.getId(),
+        ResponseEntity<CourseSession> client = restTemplate.exchange(baseUrl + "/api/course-session" + ServiceApiEndpoint.UPDATE.getEndpoint() + entity.getId(),
                 HttpMethod.PUT, request, CourseSession.class);
         return client.getBody();
     }
@@ -77,7 +69,7 @@ public class CourseSessionRepositoryImpl implements CourseSessionRepository {
     @Override
     public void deleteById(Long id) {
         RestTemplate restTemplate = new RestTemplate();
-        restTemplate.exchange(getServiceUrl() + ServiceApiEndpoint.DELETE.getEndpoint() + id,
+        restTemplate.exchange(baseUrl + "/api/course-session" + ServiceApiEndpoint.DELETE.getEndpoint() + id,
                 HttpMethod.DELETE, null, Long.class);
     }
 }

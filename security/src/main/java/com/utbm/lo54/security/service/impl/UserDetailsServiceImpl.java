@@ -1,7 +1,7 @@
 package com.utbm.lo54.security.service.impl;
 
-import com.utbm.lo54.security.domain.Role;
-import com.utbm.lo54.security.domain.User;
+import com.utbm.lo54.common.domain.security.Role;
+import com.utbm.lo54.common.domain.security.User;
 import com.utbm.lo54.security.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -9,6 +9,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,14 +18,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Service("userDetailsService")
+@Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
     private UserRepository userRepository;
 
-
-    @Transactional(value = "usersPlatformTransactionManager", readOnly=true)
+    @Transactional(readOnly=true)
     @Override
     public UserDetails loadUserByUsername(final String username)
             throws UsernameNotFoundException {

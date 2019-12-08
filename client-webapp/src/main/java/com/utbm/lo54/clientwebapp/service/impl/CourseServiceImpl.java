@@ -2,14 +2,13 @@ package com.utbm.lo54.clientwebapp.service.impl;
 
 import com.utbm.lo54.clientwebapp.repository.CourseRepository;
 import com.utbm.lo54.clientwebapp.service.CourseService;
-import com.utbm.lo54.core.domain.Course;
-import com.utbm.lo54.core.exception.ResourceNotFoundException;
+import com.utbm.lo54.common.domain.courses.Course;
+import com.utbm.lo54.common.exception.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.List;
 
 @Service

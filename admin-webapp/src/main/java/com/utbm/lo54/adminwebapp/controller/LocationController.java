@@ -1,8 +1,8 @@
 package com.utbm.lo54.adminwebapp.controller;
 
 import com.utbm.lo54.adminwebapp.service.LocationService;
-import com.utbm.lo54.core.domain.Location;
-import com.utbm.lo54.core.exception.ResourceNotFoundException;
+import com.utbm.lo54.common.domain.courses.Location;
+import com.utbm.lo54.common.exception.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

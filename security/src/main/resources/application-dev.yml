@@ -1,40 +1,40 @@
-hibernate:
-    cache:
-        use_query_cache: true
-        use_second_level_cache: false
-    dialect: org.hibernate.dialect.PostgreSQL9Dialect
-logging:
-    level:
-        org:
-            hibernate:
-                SQL: DEBUG
-                engine:
-                    jdbc:
-                        env:
-                            internal:
-                                LobCreatorBuilderImpl: ERROR
-                stat: TRACE
-                type:
-                    descriptor:
-                        sql:
-                            BasicBinder: TRACE
-spring:
-    datasource:
-        driver-class-name: org.postgresql.Driver
-        password: postgres
-        url: jdbc:postgresql://localhost:5432/jcourses
-        username: postgres
-        users:
-            url: jdbc:postgresql://localhost:5432/users
-    jpa:
-        hibernate:
-            ddl-auto: validate
-        properties:
-            hibernate:
-                format_sql: true
-                generate_statistics: true
-        show-sql: true
-    mvc:
-        view:
-            prefix: /WEB-INF/views/
-            suffix: .jsp
+#hibernate:
+#    cache:
+#        use_query_cache: true
+#        use_second_level_cache: false
+#    dialect: org.hibernate.dialect.PostgreSQL9Dialect
+#logging:
+#    level:
+#        org:
+#            hibernate:
+#                SQL: DEBUG
+#                engine:
+#                    jdbc:
+#                        env:
+#                            internal:
+#                                LobCreatorBuilderImpl: ERROR
+#                stat: TRACE
+#                type:
+#                    descriptor:
+#                        sql:
+#                            BasicBinder: TRACE
+#spring:
+#    datasource:
+#        driver-class-name: org.postgresql.Driver
+#        password: postgres
+#        url: jdbc:postgresql://localhost:5432/jcourses
+#        username: postgres
+#        users:
+#            url: jdbc:postgresql://localhost:5432/users
+#    jpa:
+#        hibernate:
+#            ddl-auto: validate
+#        properties:
+#            hibernate:
+#                format_sql: true
+#                generate_statistics: true
+#        show-sql: true
+#    mvc:
+#        view:
+#            prefix: /WEB-INF/views/
+#            suffix: .jsp

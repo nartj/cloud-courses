@@ -1,8 +1,8 @@
 package com.utbm.lo54.clientwebapp.domain;
 
-import com.utbm.lo54.core.domain.Course;
-import com.utbm.lo54.core.domain.CourseSession;
-import com.utbm.lo54.core.domain.Location;
+import com.utbm.lo54.common.domain.courses.Course;
+import com.utbm.lo54.common.domain.courses.CourseSession;
+import com.utbm.lo54.common.domain.courses.Location;
 
 import java.io.Serializable;
 import java.util.List;

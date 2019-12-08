@@ -1,0 +1,32 @@
+server:
+  port: 8050
+
+spring:
+  application:
+    name: zuul-edge-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: S:\Git\jcoursescloud\config-repo
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/users
+    username: postgres
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+zuul:
+  sensitive-headers: Cookie,Set-Cookie
+  routes:
+    service-layer:
+      path: /service-layer/**
+      service-id: service-layer
+      strip-prefix: false
+
+
+jwt:
+  secret: lo54

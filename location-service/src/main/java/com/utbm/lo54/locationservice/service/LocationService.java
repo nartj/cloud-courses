@@ -1,8 +1,8 @@
 package com.utbm.lo54.locationservice.service;
 
 
-import com.utbm.lo54.core.domain.Location;
-import com.utbm.lo54.core.exception.ResourceNotFoundException;
+import com.utbm.lo54.common.domain.courses.Location;
+import com.utbm.lo54.common.exception.ResourceNotFoundException;
 
 import java.util.List;
 

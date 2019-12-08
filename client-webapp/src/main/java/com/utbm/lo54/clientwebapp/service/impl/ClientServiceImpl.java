@@ -1,12 +1,12 @@
 package com.utbm.lo54.clientwebapp.service.impl;
 
 import com.utbm.lo54.clientwebapp.repository.ClientRepository;
+import com.utbm.lo54.clientwebapp.repository.UserRepository;
+import com.utbm.lo54.clientwebapp.repository.HttpRepository;
 import com.utbm.lo54.clientwebapp.service.ClientService;
-import com.utbm.lo54.core.domain.Client;
-import com.utbm.lo54.security.domain.User;
-import com.utbm.lo54.core.exception.ResourceNotFoundException;
-import com.utbm.lo54.security.repository.UserRepository;
-import com.utbm.lo54.security.service.impl.SecurityServiceImpl;
+import com.utbm.lo54.common.domain.courses.Client;
+import com.utbm.lo54.common.domain.security.User;
+import com.utbm.lo54.common.exception.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,7 +47,7 @@ public class ClientServiceImpl implements ClientService {
         // Get current session User
         String username = securityService.findLoggedInUsername();
         logger.info("Current username (spring security) {} requested a client registration", username);
-        User clientUser = userRepository.findByUsername(username);
+        User clientUser = userRepository.findByUserName(username);
         logger.info("Current user {} requested a client registration", clientUser);
 
         // Populate Client User

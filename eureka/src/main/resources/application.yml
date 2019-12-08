@@ -2,12 +2,12 @@ eureka:
     client:
         fetch-registry: false
         register-with-eureka: false
-        serviceUrl:
-            defaultZone: http://localhost:8761/eureka/
     server:
-        eviction-interval-timer-in-ms: 1000
+        eviction-interval-timer-in-ms: 10000
+        registry-sync-retry-wait-ms: 10
 server:
     port: 8761
 spring:
     application:
         name: eureka-server
+

@@ -1,9 +1,9 @@
 package com.utbm.lo54.clientwebapp.controller;
 
+import com.utbm.lo54.clientwebapp.service.SecurityService;
+import com.utbm.lo54.clientwebapp.service.UserService;
+import com.utbm.lo54.common.domain.security.User;
 import com.utbm.lo54.clientwebapp.validator.UserValidator;
-import com.utbm.lo54.security.domain.User;
-import com.utbm.lo54.security.service.SecurityService;
-import com.utbm.lo54.security.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -47,7 +47,6 @@ public class UserController {
         }
 
         userService.save(userForm);
-
         securityService.autoLogin(userForm.getUsername(), userForm.getPasswordConfirm());
 
         return "welcome";
@@ -65,7 +64,7 @@ public class UserController {
         return "admin";
     }
 
-    @RequestMapping(value = "/Access_Denied", method = RequestMethod.GET)
+    @RequestMapping(value = "/access-denied", method = RequestMethod.GET)
     public String accessDeniedPage(ModelMap model) {
         model.addAttribute("user", getPrincipal());
         return "accessDenied";
@@ -75,6 +74,7 @@ public class UserController {
     public String loginPage() {
         return "login";
     }
+
 
     @RequestMapping(value="/logout", method = RequestMethod.GET)
     public String logoutPage (HttpServletRequest request, HttpServletResponse response) {

@@ -1,10 +1,13 @@
+application:
+    gateway:
+        url: http://localhost:8050
 eureka:
     client:
         fetchRegistry: true
         serviceUrl:
             defaultZone: http://localhost:8761/eureka/
-    instance:
-        hostname: localhost
+        register-with-eureka: true
+
 hibernate:
     cache:
         use_query_cache: true
@@ -32,15 +35,9 @@ management:
                 include: '*'
 server:
     port: 8081
-services:
-    client:
-        url: http://localhost:8181
-    course:
-        url: http://localhost:8182
-    course-session:
-        url: http://localhost:8180
-    location:
-        url: http://localhost:8183
+    servlet:
+        context-path: /client-webapp
+
 spring:
     application:
         name: client-webapp
@@ -55,8 +52,6 @@ spring:
         password: postgres
         url: jdbc:postgresql://localhost:5432/jcourses
         username: postgres
-        users:
-            url: jdbc:postgresql://localhost:5432/users
     jpa:
         hibernate:
             ddl-auto: create-drop
@@ -71,3 +66,6 @@ spring:
             suffix: .jsp
     profiles:
         active: dev
+    devtools:
+        restart:
+            additional-paths: .

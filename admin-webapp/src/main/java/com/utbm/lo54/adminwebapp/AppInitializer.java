@@ -1,8 +1,7 @@
 package com.utbm.lo54.adminwebapp;
 
 import com.utbm.lo54.security.SecurityConfiguration;
-import com.utbm.lo54.core.PersistenceConfiguration;
-import com.utbm.lo54.security.UsersPersistenceConfiguration;
+import com.utbm.lo54.common.PersistenceConfiguration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class AppInitializer extends

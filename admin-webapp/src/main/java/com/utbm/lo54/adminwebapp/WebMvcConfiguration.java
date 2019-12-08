@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @ComponentScan(basePackages = {
-        "com.utbm.lo54.core", "com.utbm.lo54.adminwebapp"
+        "com.utbm.lo54.common", "com.utbm.lo54.adminwebapp"
 })
 public class WebMvcConfiguration implements WebMvcConfigurer {
     @Value("spring.mvc.view.prefix")

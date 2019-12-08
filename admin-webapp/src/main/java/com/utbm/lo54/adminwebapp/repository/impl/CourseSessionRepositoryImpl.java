@@ -1,7 +1,7 @@
 package com.utbm.lo54.adminwebapp.repository.impl;
 
 import com.utbm.lo54.adminwebapp.repository.CourseSessionRepository;
-import com.utbm.lo54.core.domain.CourseSession;
+import com.utbm.lo54.common.domain.courses.CourseSession;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

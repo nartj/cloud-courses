@@ -1,7 +1,7 @@
 package com.utbm.lo54.clientwebapp.validator;
 
-import com.utbm.lo54.security.domain.User;
-import com.utbm.lo54.security.service.UserService;
+import com.utbm.lo54.clientwebapp.service.UserService;
+import com.utbm.lo54.common.domain.security.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
@@ -26,7 +26,7 @@ public class UserValidator implements Validator {
         if (user.getUsername().length() < 6 || user.getUsername().length() > 32) {
             errors.rejectValue("username", "Size.userForm.username");
         }
-        if (userService.findByUsername(user.getUsername()) != null) {
+        if (userService.findByUserName(user.getUsername()) != null) {
             errors.rejectValue("username", "Duplicate.userForm.username");
         }
 

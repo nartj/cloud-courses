@@ -1,6 +1,6 @@
 package com.utbm.lo54.security.service.impl;
 
-import com.utbm.lo54.security.domain.User;
+import com.utbm.lo54.common.domain.security.User;
 import com.utbm.lo54.security.repository.RoleRepository;
 import com.utbm.lo54.security.repository.UserRepository;
 import com.utbm.lo54.security.service.UserService;
@@ -20,12 +20,13 @@ public class UserServiceImpl implements UserService {
     private RoleRepository roleRepository;
 
     @Override
-    public void save(User user) {
+    public User save(User user) {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         user.setPassword(encoder.encode(user.getPassword()));
         user.setRoles(new HashSet<>(Collections.singletonList(roleRepository.findById(2L).get())));
         user.setEnabled(true);
         userRepository.save(user);
+        return user;
     }
 
     @Override
