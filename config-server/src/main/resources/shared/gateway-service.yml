@@ -1,0 +1,43 @@
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+  proxy:
+    auth:
+      routes:
+        backend-service: oauth2
+        stores: passthru
+        recommendations: none
+
+  routes:
+    backend-service:
+      path: /services/**
+      service-id: backend-service
+      stripPrefix: false
+      sensitiveHeaders:
+
+    web-app:
+      path: /webapp/**
+      serviceId: web-app
+      stripPrefix: false
+      sensitiveHeaders:
+
+server:
+  port: 8081
+
+
+security:
+  oauth2:
+#    resource:
+#      userInfoUri: BUGFIX
+    client:
+#      clientId: account-service
+#      clientSecret: 1234
+      accessTokenUri: http://localhost:8081/oauth/token
+#      grant-type: password,refresh_token,client_credentials
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true

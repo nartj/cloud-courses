@@ -6,37 +6,41 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zuul" />
-        <module name="client-webapp" />
+        <module name="gateway-service" />
         <module name="common" />
-        <module name="service-layer" />
-        <module name="eureka" />
         <module name="config-server" />
+        <module name="web-app" />
+        <module name="eureka-server" />
+        <module name="backend-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="account-service" target="1.8" />
       <module name="admin-webapp" target="8" />
+      <module name="authserver" target="1.8" />
       <module name="client-service" target="1.8" />
       <module name="course-service" target="1.8" />
       <module name="course-session-service" target="1.8" />
+      <module name="gateway" target="1.5" />
       <module name="location-service" target="1.8" />
-      <module name="security" target="1.5" />
+      <module name="security" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account-service" options="-parameters" />
       <module name="admin-webapp" options="-parameters" />
+      <module name="backend-service" options="-parameters" />
       <module name="client-service" options="-parameters" />
-      <module name="client-webapp" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="course-service" options="-parameters" />
       <module name="course-session-service" options="-parameters" />
-      <module name="eureka" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
       <module name="location-service" options="-parameters" />
       <module name="security" options="-parameters" />
-      <module name="service-layer" options="-parameters" />
-      <module name="zuul" options="-parameters" />
+      <module name="web-app" options="-parameters" />
     </option>
   </component>
 </project>

@@ -2,30 +2,1145 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a254ca3d-d6ed-4758-b9f0-80aae046b7fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/utbm/lo54/accountservice/AccountServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/utbm/lo54/accountservice/ResourceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/utbm/lo54/accountservice/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/utbm/lo54/accountservice/dto/TokenInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/utbm/lo54/accountservice/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/utbm/lo54/accountservice/dto/UserLoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/utbm/lo54/accountservice/dto/UserRegistrationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/utbm/lo54/accountservice/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/utbm/lo54/accountservice/service/AuthServiceFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/main/java/com/utbm/lo54/accountservice/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-service/src/test/java/com/utbm/lo54/accountservice/AccountServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/.mvn/jvm.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/java/demo/AuthserverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/resources/keystore.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/resources/templates/authorize.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/resources/templates/login.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/wro/main.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/wro/wro.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/main/wro/wro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-server/src/test/java/demo/ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/ResourceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/controller/CourseSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/repository/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/repository/CourseSessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/repository/impl/CourseSessionRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/repository/impl/CourseSessionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/service/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/service/CourseSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/service/impl/ClientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/service/impl/CourseSessionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/security/JwtAuthenticationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/security/JwtTokenAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/security/JwtUsernamePasswordAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/shared/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/shared/auth-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/shared/backend-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/shared/eureka-server.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/shared/gateway-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/shared/web-app.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/utbm/lo54/eureka/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/AuthorizationServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/GatewayConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/GatewayServiceApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/ResourceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/SecurityOAuth2Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/controller/AuthenticationResourceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/controller/JwtAuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/domain/JwtRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/domain/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/domain/JwtToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/JwtTokenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/service/JwtUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/service/feign/WebAppFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/bean/auth/AuthResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/bean/auth/JwtToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/bean/auth/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/bean/auth/MongoUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/bean/auth/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/bean/auth/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/exception/GlobalExceptionHandlerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/repository/JwtTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/security/JwtTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/security/JwtTokenFilterConfigurer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/security/JwtTokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/security/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/service/ILoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/utbm/lo54/gateway/service/serviceimpl/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/test/java/com/utbm/lo54/gateway/GatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AdminWebappApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/CourseSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/LocationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/helper/ModelHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/domain/CourseSessionModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/CourseSessionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/LocationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/http/HttpRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/ClientRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/CourseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/CourseSessionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/LocationRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/CourseSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/LocationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/ClientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/CourseSessionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/LocationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/validator/UserValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker.standalone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker.standalone.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker.standalone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker3.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker3.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/js/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/js/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker-en-CA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ar-tn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.az.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bg.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.br.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ca.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.cs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.cy.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.da.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.de.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.el.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-AU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-CA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-GB.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-IE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-NZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-ZA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.eo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.es.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.et.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.eu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fa.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fo.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fr-CH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.gl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.he.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hy.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.id.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.is.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.it-CH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.it.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ja.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ka.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.kh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.kk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.km.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ko.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.kr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.lt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.lv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.me.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.mk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.mn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ms.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.nl-BE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.nl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.no.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.oc.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.pl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.pt-BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.pt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ro.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.rs-latin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.rs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ru.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.si.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sq.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sr-latin.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sw.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ta.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.tg.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.th.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.tk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.tr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.uk.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.uz-cyrl.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.uz-latn.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.vi.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/locales/bootstrap-datepicker.zh-TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/resources/validation.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/messages/messages_fr.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/access-denied.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/client-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/client-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/course-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/course-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/course-session-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/course-session-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/location-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/location-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/registration.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/webapp/WEB-INF/views/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/admin-webapp/src/test/java/com/utbm/lo54/adminwebapp/ClientWebappApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/src/main/java/com/utbm/lo54/clientservice/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/src/main/java/com/utbm/lo54/clientservice/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/src/main/java/com/utbm/lo54/clientservice/ClientServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/src/main/java/com/utbm/lo54/clientservice/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/client-service/src/test/java/com/utbm/lo54/clientservice/ClientServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/src/main/java/com/utbm/lo54/courseservice/CourseServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/src/main/java/com/utbm/lo54/courseservice/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-service/src/test/java/com/utbm/lo54/courseservice/CourseServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/CourseSessionServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/controller/helper/ModelHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/course-session-service/src/test/java/com/utbm/lo54/coursesessionservice/CourseSessionServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/main/java/com/utbm/lo54/locationservice/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/main/java/com/utbm/lo54/locationservice/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/main/java/com/utbm/lo54/locationservice/LocationServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/main/java/com/utbm/lo54/locationservice/WebMvcConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/main/java/com/utbm/lo54/locationservice/repository/LocationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/main/java/com/utbm/lo54/locationservice/service/LocationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/main/java/com/utbm/lo54/locationservice/service/impl/LocationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/location-service/src/test/java/com/utbm/lo54/locationservice/LocationServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/AuthForwardInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/AuthorizationServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/OAuth2AuthorizationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/RequestContextHolderCallable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/RequestContextHolderHystrixConcurrencyStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/domain/AuthClientDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/domain/Authorities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/domain/MongoAccessToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/domain/MongoRefreshToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/dto/UserRegistrationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/mongodb/MongoBeeConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/mongodb/MongoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/mongodb/MongoProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/mongodb/MongoTokenStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/mongodb/changelog/InitialValuesChangeLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/repository/AuthClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/AuthClientDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/util/SerializableObjectConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/AuthForwardInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/AuthenticationTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/CustomAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/CustomAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/CustomAuthenticationSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/CustomFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/CustomRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/CustomWebSecurityConfigurerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/FeignConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/MyRequestContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/OAuth2RequestInterceptorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/OAuthConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/RequestContextHolderCallable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/RequestContextHolderHystrixConcurrencyStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/ResourceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/TokenAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/TokenAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/controller/helper/CoursesModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/controller/helper/FilledCourseSessionModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/domain/CourseSessionForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/domain/Details.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/domain/PExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/domain/POAuth2Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/domain/PPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/domain/RequestParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/domain/TokenInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/domain/UADetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/domain/UAPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/domain/UserAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/dto/ClientDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/dto/CourseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/dto/CourseFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/dto/CourseSessionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/dto/LocationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/dto/PrincipalDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/dto/UserCredentialsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/dto/UserLoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/dto/UserRegistrationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/handler/CustomSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/service/feign/AccountServiceFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/service/feign/AuthServiceFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/service/feign/GatewayServiceFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/service/feign/ServiceLayerFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/service/impl/LoginTokenPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/utils/JsonFeignResponseHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/utils/SecurityApiEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/utils/ServicesApiEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/access-denied.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/authenticate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/client-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/client-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/course-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/course-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/course-session-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/course-session-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/location-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/location-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/registration.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/resources/templates/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/webapp/WEB-INF/views/authenticate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web-app/src/main/webapp/WEB-INF/views/client-form-validation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/messages/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/messages/messages_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/access-denied.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/access-denied.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/client-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/client-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/client-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/client-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-session-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-session-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/course-session-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-session-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/location-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/location-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/location-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/location-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/registration.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/views/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AdminWebappApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/WebMvcConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/ClientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/CourseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/CourseSessionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/LocationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/controller/helper/ModelHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/domain/CourseSessionModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/ClientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/CourseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/CourseSessionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/LocationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/http/HttpRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/ClientRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/CourseRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/CourseSessionRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/repository/impl/LocationRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/ClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/CourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/CourseSessionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/LocationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/ClientServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/CourseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/CourseSessionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/LocationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/validator/UserValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.standalone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.standalone.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker.standalone.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap-datepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker-en-CA.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ar-tn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.az.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bg.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.br.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.bs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ca.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.cs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.cy.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.da.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.de.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.el.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-AU.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-CA.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-GB.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-IE.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-NZ.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.en-ZA.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.eo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.es.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.et.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.eu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fa.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fr-CH.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.fr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.gl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.he.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.hy.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.id.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.is.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.it-CH.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.it.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ja.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ka.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.kh.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.kk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.km.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ko.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.kr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.lt.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.lv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.me.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.mk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.mn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ms.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.nl-BE.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.nl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.no.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.oc.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.pl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.pt-BR.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.pt.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ro.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.rs-latin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.rs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ru.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.si.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sq.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sr-latin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.sw.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.ta.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.tg.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.th.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.tk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.tr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.uk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.uz-cyrl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.uz-latn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.vi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.zh-CN.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/locales/bootstrap-datepicker.zh-TW.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/resources/validation.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/messages/messages_fr.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/access-denied.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/admin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/client-form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/client-list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/course-form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/course-list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/course-session-form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/course-session-list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/location-form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/location-list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/registration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/main/webapp/WEB-INF/views/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/src/test/java/com/utbm/lo54/adminwebapp/ClientWebappApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.standalone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.standalone.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker.standalone.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.standalone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.standalone.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-datepicker3.standalone.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap-datepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker-en-CA.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ar-tn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.az.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.bg.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.bm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.bn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.br.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.bs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ca.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.cs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.cy.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.da.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.de.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.el.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-AU.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-CA.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-GB.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-IE.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-NZ.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.en-ZA.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.eo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.es.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.et.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.eu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.fa.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.fi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.fo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.fr-CH.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.fr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.gl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.he.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.hi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.hr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.hu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.hy.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.id.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.is.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.it-CH.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.it.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ja.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ka.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.kh.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.kk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.km.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ko.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.kr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.lt.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.lv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.me.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.mk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.mn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ms.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.nl-BE.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.nl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.no.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.oc.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.pl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.pt-BR.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.pt.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ro.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.rs-latin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.rs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ru.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.si.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sq.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sr-latin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.sw.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.ta.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.tg.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.th.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.tk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.tr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.uk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.uz-cyrl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.uz-latn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.vi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.zh-CN.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-webapp/target/classes/locales/bootstrap-datepicker.zh-TW.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/ClientServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/WebMvcConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/controller/ClientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/repository/ClientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/service/ClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/java/com/utbm/lo54/clientservice/service/impl/ClientServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-service/src/test/java/com/utbm/lo54/clientservice/ClientServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/META-INF/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/[Help" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/ClientWebappApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/ClientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/CourseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/CourseSessionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/LocationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/helper/ModelHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/domain/CourseSessionModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/ClientRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/CourseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/CourseSessionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/HttpRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/LocationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/SecurityRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/ClientRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/CourseRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/CourseSessionRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/HttpRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/LocationRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/SecurityRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/repository/impl/UserRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/ClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/CourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/CourseSessionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/LocationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/SecurityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/ClientServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/CourseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/CourseSessionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/LocationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/SecurityServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/validator/UserValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.standalone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.standalone.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker.standalone.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-datepicker3.standalone.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap-datepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker-en-CA.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ar-tn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.az.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.bg.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.bm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.bn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.br.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.bs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ca.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.cs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.cy.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.da.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.de.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.el.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-AU.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-CA.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-GB.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-IE.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-NZ.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.en-ZA.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.eo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.es.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.et.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.eu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.fa.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.fi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.fo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.fr-CH.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.fr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.gl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.he.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.hi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.hr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.hu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.hy.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.id.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.is.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.it-CH.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.it.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ja.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ka.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.kh.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.kk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.km.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ko.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.kr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.lt.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.lv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.me.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.mk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.mn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ms.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.nl-BE.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.nl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.no.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.oc.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.pl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.pt-BR.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.pt.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ro.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.rs-latin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.rs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ru.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.si.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sq.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sr-latin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.sw.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.ta.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.tg.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.th.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.tk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.tr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.uk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.uz-cyrl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.uz-latn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.vi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.zh-CN.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/locales/bootstrap-datepicker.zh-TW.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/resources/validation.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/messages/messages_fr.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/access-denied.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/admin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/client-form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/client-list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-session-form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/course-session-list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/location-form.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/location-list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/registration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/views/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client-webapp/src/test/java/com/utbm/lo54/adminwebapp/ClientWebappApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-courses.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-courses.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudcourses.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/common/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/common/mvnw.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/courses/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/courses/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/courses/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/courses/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/courses/CourseSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/utbm/lo54/common/domain/courses/CourseSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/admin-webapp-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/admin-webapp-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/client-service-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/client-service-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/client-webapp-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/client-webapp-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/course-service-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/course-service-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/course-session-service-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/course-session-service-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/dev/admin-webapp-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/dev/client-service-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/dev/client-webapp-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/dev/course-service-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/dev/course-session-service-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/dev/location-service-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/location-service-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/location-service-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/prod/admin-webapp-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/prod/client-service-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/prod/client-webapp-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/prod/course-service-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/prod/course-session-service-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/prod/location-service-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/mvnw.cmd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/com/utbm/lo54/configserver/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/java/com/utbm/lo54/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/CourseServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/controller/CourseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/repository/CourseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/service/CourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/src/main/java/com/utbm/lo54/courseservice/service/impl/CourseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-service/src/test/java/com/utbm/lo54/courseservice/CourseServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/CourseSessionServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/WebMvcConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/controller/CourseSessionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/controller/helper/ModelHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/repository/CourseSessionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/service/CourseSessionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/service/impl/CourseSessionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-session-service/src/test/java/com/utbm/lo54/coursesessionservice/CourseSessionServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/src/main/java/com/utbm/lo54/eureka/EurekaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/utbm/lo54/eureka/EurekaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka/src/test/java/com/utbm/lo54/eureka/EurekaApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/utbm/lo54/eureka/EurekaApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/LocationServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/WebMvcConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/controller/LocationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/repository/LocationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/service/LocationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/java/com/utbm/lo54/locationservice/service/impl/LocationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/location-service/src/test/java/com/utbm/lo54/locationservice/LocationServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/config-repo/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/old/config-repo/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-layer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-layer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/security/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/security/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/JwtUsernameAndPasswordAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/JwtUsernameAndPasswordAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/SecurityApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/SecurityApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/controller/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/SecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/SecurityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/SecurityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/old/admin-webapp/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/old/admin-webapp/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/ServiceLayerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/BackEndServiceApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/client-service/src/main/java/com/utbm/lo54/clientservice/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/course-service/src/main/java/com/utbm/lo54/courseservice/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/controller/CourseSessionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/controller/CourseSessionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/location-service/src/main/java/com/utbm/lo54/locationservice/controller/LocationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/controller/helper/ModelHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/controller/helper/ModelHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/client-service/src/main/java/com/utbm/lo54/clientservice/repository/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/repository/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/course-service/src/main/java/com/utbm/lo54/courseservice/repository/CourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/repository/CourseSessionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/repository/CourseSessionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/repository/LocationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/repository/LocationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/client-service/src/main/java/com/utbm/lo54/clientservice/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/course-service/src/main/java/com/utbm/lo54/courseservice/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/CourseSessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/service/CourseSessionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/service/LocationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/impl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/client-service/src/main/java/com/utbm/lo54/clientservice/service/impl/ClientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/admin-webapp/src/main/java/com/utbm/lo54/adminwebapp/service/impl/CourseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/impl/CourseSessionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/course-session-service/src/main/java/com/utbm/lo54/coursesessionservice/service/impl/CourseSessionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/java/com/utbm/lo54/servicelayer/service/impl/LocationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/service/impl/LocationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-layer/src/test/java/com/utbm/lo54/servicelayer/ServicelayerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/src/test/java/com/utbm/lo54/backend/ServicelayerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/shared/account-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/backend-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/JwtUsernameAndPasswordAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/JwtUsernameAndPasswordAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/ZuulApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/controller/JwtAuthenticationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/controller/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/domain/AuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/JwtRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/JwtResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/JwtToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/domain/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/domain/UserAppDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/domain/UserAppDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/repository/JwtTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/repository/JwtTokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/repository/SecurityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/repository/SecurityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/JwtConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtRequestFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/JwtTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtTokenFilterConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/JwtTokenFilterConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtTokenUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/SecurityTokenConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/SecurityTokenConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/exception/CustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/exception/CustomException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/JwtUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/service/SecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/impl/SecurityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/service/impl/SecurityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/impl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/test/java/com/utbm/lo54/zuul/ZuulApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/test/java/com/utbm/lo54/gateway/ZuulApplicationTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +1155,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -69,7 +1185,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/service/impl" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -86,21 +1202,25 @@
       <recent name="com.utbm.lo54.core" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="S:\Git\cloudcourses\zuul\src\main\java\com\utbm\lo54\zuul\service\impl" />
-      <recent name="S:\Git\cloudcourses\zuul\src\main\java\com\utbm\lo54\zuul\service" />
-      <recent name="S:\Git\cloudcourses\zuul\src\main\java\com\utbm\lo54\zuul\repository" />
-      <recent name="S:\Git\cloudcourses\zuul\src\main\java\com\utbm\lo54\zuul\domain" />
-      <recent name="S:\Git\cloudcourses\zuul\src\main\java\com\utbm\lo54\zuul\controller" />
+      <recent name="S:\Git\cloudcourses\security\src\main\java\com\utbm\lo54\security" />
+      <recent name="S:\Git\cloudcourses\cloud-courses-webapp\src\main\java\com\utbm\lo54\cloudcourseswebapp\dto" />
+      <recent name="S:\Git\cloudcourses\account-service\src\main\java\com\utbm\lo54\accountservice" />
+      <recent name="S:\Git\cloudcourses\security\src\main\java\com\utbm\lo54\security\domain" />
+      <recent name="S:\Git\cloudcourses\security\src\main\java\com\utbm\lo54\security\mongodb" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.utbm.lo54.zuul" />
-      <recent name="com.utbm.lo54.zuul.security" />
-      <recent name="com.utbm.lo54.servicelayer.controller" />
+      <recent name="com.utbm.lo54.accountservice.dto" />
+      <recent name="com.utbm.lo54.cloudcourseswebapp.service" />
+      <recent name="com.utbm.lo54.cloudcourseswebapp.handler" />
+      <recent name="com.utbm.lo54.cloudcourseswebapp.dto" />
+      <recent name="com.utbm.lo54.cloudcourseswebapp.utils" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.utbm.lo54.zuul.service.impl" />
-      <recent name="com.utbm.lo54.zuul.security.exception" />
-      <recent name="com.utbm.lo54.zuul.security" />
+      <recent name="com.utbm.lo54.webapp" />
+      <recent name="com.utbm.lo54.cloudcourseswebapp.dto" />
+      <recent name="com.utbm.lo54.cloudcourseswebapp.domain" />
+      <recent name="com.utbm.lo54.cloudcourseswebapp.service.impl" />
+      <recent name="com.utbm.lo54.cloudcourseswebapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -120,23 +1240,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ClientWebappApplication">
-    <configuration name="ClientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="client-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.clientservice.ClientServiceApplication" />
+  <component name="RunManager" selected="Spring Boot.GatewayServiceApp">
+    <configuration name="BackEndServiceApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="backend-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.utbm.lo54.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.backend.BackEndServiceApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClientWebappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="client-webapp" />
+    <configuration name="CloudCoursesWebappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="web-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.utbm.lo54.clientwebapp.*" />
+          <option name="PATTERN" value="com.utbm.lo54.webapp.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.clientwebapp.ClientWebappApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.webapp.CloudCourseWebApp" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
@@ -150,99 +1276,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="course-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.courseservice.CourseServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CourseSessionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="course-session-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.coursesessionservice.CourseSessionServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="eureka" />
+      <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.eureka.EurekaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="location-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.locationservice.LocationServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SecurityApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="security" />
+    <configuration name="GatewayServiceApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.utbm.lo54.security.*" />
+          <option name="PATTERN" value="com.utbm.lo54.gateway.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.security.SecurityApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServicelayerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="service-layer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.servicelayer.ServiceLayerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="zuul" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.zuul.ZuulApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.utbm.lo54.gateway.GatewayServiceApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.ClientServiceApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
-      <item itemvalue="Spring Boot.CourseServiceApplication" />
-      <item itemvalue="Spring Boot.CourseSessionServiceApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
-      <item itemvalue="Spring Boot.LocationServiceApplication" />
-      <item itemvalue="Spring Boot.ServicelayerApplication" />
-      <item itemvalue="Spring Boot.ZuulApplication" />
-      <item itemvalue="Spring Boot.SecurityApp" />
-      <item itemvalue="Spring Boot.ClientWebappApplication" />
+      <item itemvalue="Spring Boot.CloudCoursesWebappApplication" />
+      <item itemvalue="Spring Boot.BackEndServiceApp" />
+      <item itemvalue="Spring Boot.GatewayServiceApp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ClientWebappApplication" />
-        <item itemvalue="Spring Boot.SecurityApp" />
+        <item itemvalue="Spring Boot.CloudCoursesWebappApplication" />
+        <item itemvalue="Spring Boot.GatewayServiceApp" />
+        <item itemvalue="Spring Boot.BackEndServiceApp" />
       </list>
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
-        <option name="contentProportion" value="0.19534633" />
+        <option name="contentProportion" value="0.24296537" />
         <treeState>
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6b20800" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4e064215" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6b20800" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@34d2b54b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6b20800" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7bff2df2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4e064215" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@26fab314" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -272,7 +1354,16 @@
       <workItem from="1575812200350" duration="14858000" />
       <workItem from="1575827358661" duration="1142000" />
       <workItem from="1575828704223" duration="1602000" />
-      <workItem from="1575830331171" duration="1588000" />
+      <workItem from="1575830331171" duration="2045000" />
+      <workItem from="1575832400333" duration="1066000" />
+      <workItem from="1575833500471" duration="15423000" />
+      <workItem from="1575900573356" duration="3511000" />
+      <workItem from="1575904503451" duration="117609000" />
+      <workItem from="1576062993347" duration="250000" />
+      <workItem from="1576063470504" duration="72510000" />
+      <workItem from="1576136707432" duration="40516000" />
+      <workItem from="1576180071693" duration="2656000" />
+      <workItem from="1576185605040" duration="8197000" />
     </task>
     <servers />
   </component>
@@ -299,19 +1390,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/UserDetailsServiceImpl.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/JwtUsernameAndPasswordAuthenticationFilter.java</url>
           <line>51</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/UserDetailsServiceImpl.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/security/src/main/java/com/utbm/lo54/security/service/impl/SecurityServiceImpl.java</url>
@@ -319,12 +1400,12 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/JwtTokenFilter.java</url>
+          <url>file://$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/JwtTokenFilter.java</url>
           <line>26</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/zuul/src/main/java/com/utbm/lo54/zuul/security/SecurityTokenConfig.java</url>
+          <url>file://$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/security/SecurityTokenConfig.java</url>
           <line>38</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -332,6 +1413,22 @@
           <url>file://$PROJECT_DIR$/client-webapp/src/main/java/com/utbm/lo54/clientwebapp/controller/UserController.java</url>
           <line>89</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/gateway-service/src/main/java/com/utbm/lo54/gateway/controller/JwtAuthenticationController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend-service/src/main/java/com/utbm/lo54/backend/controller/ClientController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/web-app/src/main/java/com/utbm/lo54/webapp/service/feign/AuthServiceFeignClient.java</url>
+          <line>30</line>
+          <properties class="com.utbm.lo54.cloudcourseswebapp.service.feign.AuthServiceFeignClient" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,10 +1,12 @@
 package com.utbm.lo54.common.domain.courses;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.utbm.lo54.common.domain.GenericWrapper;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -23,8 +25,8 @@ public class Course  extends GenericWrapper implements Serializable {
     @Column(name = "title")
     private String title;
 
-    @JsonIgnore
-    @OneToMany
+    @OneToMany(cascade=CascadeType.ALL, mappedBy="course")
+    @JsonManagedReference
     private List<CourseSession> courseSessions;
 
     public Course() { }
@@ -68,10 +70,26 @@ public class Course  extends GenericWrapper implements Serializable {
         return this;
     }
 
+    public List<CourseSession> getCourseSessions() {
+        return courseSessions;
+    }
+
+    public List<CourseSession> addCourseSessions(CourseSession courseSession) {
+        if (courseSessions == null) courseSessions = new ArrayList<>();
+        courseSessions.add(courseSession);
+        return courseSessions;
+    }
+
+    public Course setCourseSessions(List<CourseSession> courseSessions) {
+        this.courseSessions = courseSessions;
+        return this;
+    }
+
     @Override
     public String toString() {
         return "Course{" +
-                "code='" + code + '\'' +
+                "id=" + id +
+                ", code='" + code + '\'' +
                 ", title='" + title + '\'' +
                 '}';
     }
@@ -81,12 +99,15 @@ public class Course  extends GenericWrapper implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Course course = (Course) o;
-        return Objects.equals(code, course.code) &&
-                Objects.equals(title, course.title);
+        return Objects.equals(id, course.id) &&
+                Objects.equals(code, course.code) &&
+                Objects.equals(title, course.title) &&
+                Objects.equals(courseSessions, course.courseSessions);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(code, title);
+        return Objects.hash(id, code, title, courseSessions);
     }
+
 }

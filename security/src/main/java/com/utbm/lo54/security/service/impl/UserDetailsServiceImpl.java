@@ -1,66 +1,101 @@
-package com.utbm.lo54.security.service.impl;
-
-import com.utbm.lo54.common.domain.security.Role;
-import com.utbm.lo54.common.domain.security.User;
-import com.utbm.lo54.security.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-@Service
-public class UserDetailsServiceImpl implements UserDetailsService {
-
-    @Autowired
-    private UserRepository userRepository;
-
-    @Transactional(readOnly=true)
-    @Override
-    public UserDetails loadUserByUsername(final String username)
-            throws UsernameNotFoundException {
-
-        User user = userRepository.findByUsername(username);
-        List<GrantedAuthority> authorities =
-                buildUserAuthority(user.getRoles());
-
-        return buildUserForAuthentication(user, authorities);
-
-    }
-
-    private org.springframework.security.core.userdetails.User buildUserForAuthentication(User user,
-                                                                                          List<GrantedAuthority> authorities) {
-        return new org.springframework.security.core.userdetails.User(
-                user.getUsername(),
-                user.getPassword(),
-                true,
-                true,
-                true,
-                true,
-                authorities);
-    }
-
-    private List<GrantedAuthority> buildUserAuthority(Set<Role> userRoles) {
-
-        Set<GrantedAuthority> setAuths = new HashSet<GrantedAuthority>();
-
-        // Build user's authorities
-        for (Role userRole : userRoles) {
-            setAuths.add(new SimpleGrantedAuthority(userRole.getName()));
-        }
-
-        List<GrantedAuthority> result = new ArrayList<GrantedAuthority>(setAuths);
-
-        return result;
-    }
-
-}
+//package com.utbm.lo54.security.service.impl;
+//
+//import com.utbm.lo54.common.domain.security.Role;
+//import com.utbm.lo54.security.repository.UserRepository;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Qualifier;
+//import org.springframework.security.core.GrantedAuthority;
+//import org.springframework.security.core.authority.AuthorityUtils;
+//import org.springframework.security.core.authority.SimpleGrantedAuthority;
+//import org.springframework.security.core.userdetails.User;
+//import org.springframework.security.core.userdetails.UserDetails;
+//import org.springframework.security.core.userdetails.UserDetailsService;
+//import org.springframework.security.core.userdetails.UsernameNotFoundException;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+//import org.springframework.stereotype.Service;
+//import org.springframework.transaction.annotation.Transactional;
+//
+//import java.util.*;
+//
+//@Service
+//public class UserDetailsServiceImpl implements UserDetailsService {
+//
+//    @Autowired
+//    private UserRepository userRepository;
+//
+//    @Autowired
+//    private BCryptPasswordEncoder passwordEncoder;
+//
+//    @Override
+//    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+//
+//        // hard coding the users. All passwords must be encoded.
+//        final List<AppUser> users = Arrays.asList(
+//                new AppUser(1, "omar", passwordEncoder.encode("12345"), "USER"),
+//                new AppUser(2, "admin", passwordEncoder.encode("12345"), "ADMIN")
+//        );
+//
+//
+//        for(AppUser appUser: users) {
+//            if(appUser.getUsername().equals(username)) {
+//
+//                // Remember that Spring needs roles to be in this format: "ROLE_" + userRole (i.e. "ROLE_ADMIN")
+//                // So, we need to set it to that format, so we can verify and compare roles (i.e. hasRole("ADMIN")).
+//                List<GrantedAuthority> grantedAuthorities = AuthorityUtils
+//                        .commaSeparatedStringToAuthorityList("ROLE_" + appUser.getRole());
+//
+//                // The "User" class is provided by Spring and represents a model class for user to be returned by UserDetailsService
+//                // And used by auth manager to verify and check user authentication.
+//                return new User(appUser.getUsername(), appUser.getPassword(), grantedAuthorities);
+//            }
+//        }
+//
+//        // If user not found. Throw this exception.
+//        throw new UsernameNotFoundException("Username: " + username + " not found");
+//    }
+//
+//    // A (temporary) class represent the user saved in the database.
+//    private static class AppUser {
+//        private Integer id;
+//        private String username, password;
+//        private String role;
+//
+//        public AppUser(Integer id, String username, String password, String role) {
+//            this.id = id;
+//            this.username = username;
+//            this.password = password;
+//            this.role = role;
+//        }
+//
+//        public Integer getId() {
+//            return id;
+//        }
+//
+//        public void setId(Integer id) {
+//            this.id = id;
+//        }
+//
+//        public String getUsername() {
+//            return username;
+//        }
+//
+//        public void setUsername(String username) {
+//            this.username = username;
+//        }
+//
+//        public String getPassword() {
+//            return password;
+//        }
+//
+//        public void setPassword(String password) {
+//            this.password = password;
+//        }
+//        public String getRole() {
+//            return role;
+//        }
+//
+//        public void setRole(String role) {
+//            this.role = role;
+//        }
+//    }
+//}

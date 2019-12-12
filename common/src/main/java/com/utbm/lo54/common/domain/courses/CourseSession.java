@@ -1,7 +1,9 @@
 package com.utbm.lo54.common.domain.courses;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.utbm.lo54.common.domain.GenericWrapper;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -29,19 +31,19 @@ public class CourseSession  extends GenericWrapper implements Serializable {
     @Column(name = "max")
     private Integer max;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JsonBackReference
     @JoinColumn(name="course_id" , referencedColumnName="id")
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private Course course;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne()
     @JoinColumn(name="location_id" , referencedColumnName="id")
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private Location location;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "course_sessions_clients",
-            joinColumns = { @JoinColumn(name = "course_session_id") },
-            inverseJoinColumns = { @JoinColumn(name = "client_id") })
     @JsonIgnore
+    @Transient
     private List<Client> clients;
 
 

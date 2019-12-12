@@ -1,0 +1,49 @@
+server:
+  servlet:
+    context-path: /services
+  port: 8083
+
+feign:
+  hystrix:
+    enabled: true
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jcourses
+    driver-class-name: org.postgresql.Driver
+    password: postgres
+    username: postgres
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      properties:
+        hibernate:
+          format_sql: true
+          generate_statistics: true
+          dialect: org.hibernate.dialect.PostgreSQL9Dialect
+          use_query_cache: true
+          use_second_level_cache: false
+      show-sql: true
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8080/users/current
+      preferTokenInfo: false
+
+#security:
+#  oauth2:
+#    resource:
+#      userInfoUri: BUGFIX
+#    client:
+#      clientId: service-layer
+#      clientSecret: 1234
+#      accessTokenUri: http://localhost:8081/uaa/oauth/token
+#      grant-type: client_credentials
+#      scope: server

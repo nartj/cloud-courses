@@ -1,0 +1,19 @@
+security:
+  oauth2:
+    resource:
+      userInfoUri: BUGFIX
+    client:
+      clientId: account-service
+      clientSecret: 1234
+      accessTokenUri: http://localhost:8081/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+
+server:
+  servlet:
+    context-path: /accounts
+  port: 8082
+
+feign:
+  hystrix:
+    enabled: true

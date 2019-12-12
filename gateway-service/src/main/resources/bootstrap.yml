@@ -1,0 +1,10 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: gateway-service
+  cloud:
+    config:
+      uri: http://localhost:8888
+      password: 1234
+      username: user

@@ -1,0 +1,19 @@
+eureka:
+  instance:
+    prefer-ip-address: false
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      hostname: localhost
+
+security:
+  oauth2:
+    client:
+      clientAuthenticationScheme: form
+      accessTokenUri: http://localhost:8081/oauth/token
+      checkTokenUri: http://localhost:8081/oauth/check_token
+      userAuthorizationUri: http://locahost:8081/oauth/authorize
+    resource:
+      userInfoUri: http://localhost:8081/users/current
+      preferTokenInfo: false

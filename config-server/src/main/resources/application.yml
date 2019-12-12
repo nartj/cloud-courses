@@ -1,16 +1,15 @@
-management:
-    endpoints:
-        web:
-            exposure:
-                include: '*'
-server:
-    port: 8888
 spring:
+    application:
+        name:
+            config-server
     cloud:
         config:
             server:
-                git:
-                    clone-on-start: true
-                    uri: S:\Git\cloudcourses\config-repo
-    config:
-        name: configserver
+                native:
+                    search-locations: classpath:/shared
+    profiles:
+        active: native
+
+server:
+    port: 8888
+

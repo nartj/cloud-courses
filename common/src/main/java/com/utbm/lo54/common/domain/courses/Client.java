@@ -1,6 +1,7 @@
 package com.utbm.lo54.common.domain.courses;
 
 import com.utbm.lo54.common.domain.GenericWrapper;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -8,7 +9,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "clients")
-public class Client extends GenericWrapper implements Serializable {
+public class Client implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,27 +28,27 @@ public class Client extends GenericWrapper implements Serializable {
     @Column(name = "address")
     private String address;
 
-    @Column(name = "user_id")
-    private Long userId;
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "course_session_id")
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    private CourseSession courseSession;
 
     public Client() { }
 
-    public Client(Long id, String lastName, String firstName, String email, String address, Long userId) {
+    public Client(Long id, String lastName, String firstName, String email, String address, CourseSession courseSession) {
         this.id = id;
         this.lastName = lastName;
         this.firstName = firstName;
         this.address = address;
         this.email = email;
-        this.userId = userId;
+        this.courseSession = courseSession;
     }
 
-    public Client(String lastName, String firstName, String email, String address, Long userId) {
-        this.id = id;
+    public Client(String lastName, String firstName, String email, String address) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.address = address;
         this.email = email;
-        this.userId = userId;
     }
 
     public Long getId() {
@@ -95,13 +96,12 @@ public class Client extends GenericWrapper implements Serializable {
         return this;
     }
 
-
-    public Long getUserId() {
-        return userId;
+    public CourseSession getCourseSession() {
+        return courseSession;
     }
 
-    public Client setUserId(Long userId) {
-        this.userId = userId;
+    public Client setCourseSession(CourseSession courseSession) {
+        this.courseSession = courseSession;
         return this;
     }
 
@@ -109,11 +109,11 @@ public class Client extends GenericWrapper implements Serializable {
     public String toString() {
         return "Client{" +
                 "id=" + id +
-                ", lastname='" + lastName + '\'' +
-                ", firstname='" + firstName + '\'' +
-                ", address='" + address + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
                 ", email='" + email + '\'' +
-                ", userId=" + userId +
+                ", address='" + address + '\'' +
+                ", courseSession=" + courseSession +
                 '}';
     }
 
@@ -125,13 +125,13 @@ public class Client extends GenericWrapper implements Serializable {
         return Objects.equals(id, client.id) &&
                 Objects.equals(lastName, client.lastName) &&
                 Objects.equals(firstName, client.firstName) &&
-                Objects.equals(address, client.address) &&
                 Objects.equals(email, client.email) &&
-                Objects.equals(userId, client.userId);
+                Objects.equals(address, client.address) &&
+                Objects.equals(courseSession, client.courseSession);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, lastName, firstName, address, email, userId);
+        return Objects.hash(id, lastName, firstName, email, address, courseSession);
     }
 }

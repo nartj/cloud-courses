@@ -1,0 +1,25 @@
+server:
+  servlet:
+    context-path: /webapp
+  port: 8084
+
+feign:
+  hystrix:
+    enabled: true
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+
+#security:
+#  basic:
+#    enabled: false
+#  oauth2:
+#    sso:
+#      loginPath: /login
+
+security:
+  oauth2:
+    client:
+      accessTokenUri: http://localhost:8081/oauth/token
